@@ -15,21 +15,25 @@ from model.random_forest import RandomForestModel
 
 st.set_page_config(
     page_title="Machine Learning Assignment 2 - Model Evaluation",
-    page_icon="📊",
     layout="wide",
 )
 
-st.title(
-    "📊 BITS Pilani WILP - Machine Learning Assignment 2: Classification App"
-)
-st.markdown(
-    "**Student Deployment Dashboard** | Compare multiple classification"
-    " models evaluated using 6 key metrics."
-)
+st.title("Classification App Dashboard")
+st.markdown("BITS Pilani WILP AI/ML - Machine Learning Assignment 2")
+st.markdown("---")
+st.markdown("Models evaluated using 6 key metrics.")
 
 # Sidebar for controls
-st.sidebar.header("Configuration Panel")
+st.sidebar.header("Student Details:")
+st.sidebar.markdown(
+    """
+    Name: **Rakesh Kumar Paine**
+    WILP ID: **2025ac05201**  
+    """
+)
+st.sidebar.markdown("---")
 
+st.sidebar.subheader("Configuration Panel")
 model_choice = st.sidebar.selectbox(
     "Select Classification Model",
     (
@@ -61,7 +65,7 @@ model_map = {
 selected_model = model_map[model_choice]
 
 # Main Dashboard Layout
-tab1, tab2 = st.tabs(["📈 Model Evaluation Metrics", "📁 Dataset Explorer"])
+tab1, tab2 = st.tabs(["Model Evaluation Metrics", "Dataset Explorer"])
 
 with tab1:
   st.subheader(f"Performance Metrics: {model_choice}")
@@ -160,14 +164,14 @@ with tab2:
   else:
     st.info(
         "No custom file uploaded yet. Showing default dataset sample"
-        " (`bank-additional.csv`)."
+        " (`bank-additional-full.csv`)."
     )
     try:
-      default_df = pd.read_csv("bank-additional.csv", sep=";")
+      default_df = pd.read_csv("bank-additional-full.csv", sep=";")
       st.dataframe(default_df.head(100), use_container_width=True)
     except FileNotFoundError:
       st.warning(
-          "Default dataset `bank-additional.csv` not found in root directory."
+          "Default dataset `bank-additional-full.csv` not found in root directory."
       )
 
 st.markdown("---")
