@@ -1,20 +1,18 @@
 Bank Marketing – Machine Learning Classification
 1. Problem Statement
 The objective of this project is to build and compare multiple machine learning classification models for predicting whether a **bank customer** will subscribe to a term deposit as a result of a direct marketing campaign.
-
 The main goal of this project is to train different machine learning algorithms and compare their performance using the following evaluation metrics:
 
 2. Dataset Description
-The dataset is obtained from the (UCI Machine Learning Repository – Bank Marketing Dataset)[https://archive.ics.uci.edu/dataset/222/bank+marketing]. The original data represents direct marketing campaigns conducted by a Portuguese banking institution through phone calls.
-
+The dataset is obtained from the UCI Machine Learning Repository – Bank Marketing Dataset [https://archive.ics.uci.edu/dataset/222/bank+marketing]. The original data represents direct marketing campaigns conducted by a Portuguese banking institution through phone calls.
 The target variable is y, which has two possible values:
 **yes** – the customer subscribed to a term deposit.
 **no** – the customer did not subscribe to a term deposit.
 
-3. GitHub Repository Link:
-(Project GitHub Link)[https://github.com/RakeshPaine/psychic-spoon.git]
+3. GitHub Repository Link: https://github.com/RakeshPaine/psychic-spoon.git
 
 4. Model's Metrics:
+
 | ML Model Name | Accuracy | AUC | Precision | Recall | F1 | MCC |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | Logistic Regression | 0.9102 | 0.9317 | 0.6661 | 0.4182 | 0.5138 | 0.4825 |
