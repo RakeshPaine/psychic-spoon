@@ -25,12 +25,8 @@ st.markdown("Models evaluated using 6 key metrics.")
 
 # Sidebar for controls
 st.sidebar.header("Student Details:")
-st.sidebar.markdown(
-    """
-    Name: **Rakesh Kumar Paine**
-    WILP ID: **2025ac05201**  
-    """
-)
+st.sidebar.markdown("Name: **Rakesh Kumar Paine**")
+st.sidebar.markdown("WILP ID: **2025ac05201**")
 st.sidebar.markdown("---")
 
 st.sidebar.subheader("Configuration Panel")
