@@ -38,7 +38,6 @@ model_choice = st.sidebar.selectbox(
         "K-Nearest Neighbors (k-NN)",
         "Naive Bayes",
         "Random Forest",
-        "Gradient Boosting",
     ),
 )
 
