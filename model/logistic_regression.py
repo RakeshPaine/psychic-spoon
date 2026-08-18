@@ -15,7 +15,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 
 
-class LogisticModel:
+class LogisticRegressionModel:
 
   def __init__(self, data_path="../bank-additional-full.csv"):
     self.data_path = data_path
